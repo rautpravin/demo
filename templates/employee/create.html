@@ -6,7 +6,10 @@
         <br><br>
         <div class="col-lg-6">
             <h4 style="color:red;">{{ msg }}</h4>
-            <h3>Create Employee</h3>
+            <h3>
+                Create Employee
+                <a href="{% url 'master' %}" class="btn btn-sm btn-danger" style="float:right;">X</a>
+            </h3>
             <form method="post">
                 {% csrf_token %}
                 <div class="form-group">
